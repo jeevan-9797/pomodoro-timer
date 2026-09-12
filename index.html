@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+    </header>
+    <main>
+        <section id="timer">
+            <h2 id="timer-display" aria-live="polite">25:00</h2>
+            <div class="controls">
+                <button id="start-btn" type="button">Start</button>
+                <button id="pause-btn" type="button" disabled>Pause</button>
+                <button id="reset-btn" type="button">Reset</button>
+            </div>
+        </section>
+        <section id="tasks">
+            <h2>Task List</h2>
+            <form id="task-form" autocomplete="off">
+                <input id="task-input" type="text" placeholder="Enter task" required />
+                <button id="add-task-btn" type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+        <section id="stats">
+            <h2>Statistics</h2>
+            <p id="total-sessions">Total Sessions: 0</p>
+            <p id="completed-tasks">Completed Tasks: 0</p>
+            <p id="time-spent">Time Spent: 0 minutes</p>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
